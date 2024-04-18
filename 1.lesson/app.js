@@ -12,7 +12,11 @@ const app = Vue.createApp({
     },
     methods: {
         changeImgSize (){
-            const value =Math.floor(Math.random()*600)
+            let value ;
+            do {
+                value = Math.floor(Math.random() * 500 )
+            } while (value <= 300);
+            
             this.imgUrl =  `https://picsum.photos/${value}`;
             console.log(value);
         }  
