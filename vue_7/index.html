@@ -20,7 +20,7 @@
       <button v-on:click="add(10)">Add by 10</button>
       <button v-on:click="reduce(5)">Reduce by 5</button>
       <p>Result: {{ counter }}</p>
-      <input type="text">
+      <input type="text" v-on:input="setName($event,'Kaya')" placeholder="Enter your name"/>
       <p>Your Name : {{name}}</p>
     </section>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
