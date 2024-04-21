@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taha Ritmik Sayma Programi</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Taha Ritmik Sayma Programi</h1>
+  </header>
+  
+  <div id="events">
+    <section>
+      <h2>Babasinin Gülü Saymaya Basla</h2>
+      <div v-for="result in results" :key="result.name">
+        <button v-on:click="add(result.increment, result.name)">
+           {{ result.increment }} " Şer yazalim 
+        </button>
+        <p v-if="result.display">Rhythmic Count: {{ result.display }}</p>
+      </div>
+    </section>
+  </div>
+  
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+  <script src="app.js"></script>
+</body>
+</html>
