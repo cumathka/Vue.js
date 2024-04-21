@@ -1,16 +1,15 @@
 const app = Vue.createApp({
     data() {
-        const age = 13;
-const nextAge = age + 5;
         return {
-            name : "Kaya",
-            age :age ,
-            nextAge : nextAge ,
-            names : [] ,
+            name : "Kayaa",
+            age : 40 ,
             url : "https://picsum.photos/200"
         }
     },
     methods: {
+        calculateAge(){
+            return this.age + 5 ;
+        },
         randomNumber(){
        return  Math.random() 
         }

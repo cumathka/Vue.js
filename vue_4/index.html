@@ -16,7 +16,7 @@
       <!-- 2) Output your age -->
       <p>YOUR AGE : {{age}}</p>
       <!-- 3) Output your age + 5 -->
-      <p>YOUR AGE in 5 years : {{nextAge}}</p>
+      <p>YOUR AGE in 5 years : {{calculateAge()}}</p>
       <!-- 4) Output a random number (0 to 1) -->
       <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1 = {{randomNumber()}}</p>
       <div>
@@ -24,7 +24,7 @@
         <img v-bind:src="url" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input v-model="name"  type="text" id="name"/>
+      <input v-bind:value="name" type="text" id="name"/>
     </section>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js" defer></script>
